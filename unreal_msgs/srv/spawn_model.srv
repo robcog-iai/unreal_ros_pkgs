@@ -1,0 +1,6 @@
+string PathToMesh
+string PathToMaterial
+geometry_msgs/Pose Pose
+unreal_msgs/TagMsg[] Tags
+---
+bool succeded

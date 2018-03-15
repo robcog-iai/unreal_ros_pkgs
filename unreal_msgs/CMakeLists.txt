@@ -14,15 +14,15 @@ find_package(
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
-   TagMsg.msg
+   Tag.msg
 )
 
 ## Generate services in the 'srv' folder
 add_service_files(
    FILES
-   spawn_model.srv
-   set_model_pose.srv
-   delete_model.srv
+   SpawnModel.srv
+   SetModelPose.srv
+   DeleteModel.srv
 )
 
 ## Generate added messages and services with any dependencies listed here

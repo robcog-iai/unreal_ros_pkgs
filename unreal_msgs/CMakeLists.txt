@@ -21,7 +21,7 @@ add_message_files(
 add_service_files(
    FILES
    spawn_model.srv
-   relocate_model.srv
+   set_model_pose.srv
    delete_model.srv
 )
 

@@ -14,7 +14,9 @@ find_package(
 add_message_files(
    FILES
    Tag.msg
-	 StaticMeshDescription.msg
+	 MeshDescription.msg
+	 InstanceId.msg
+	 ModelDescription.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -23,7 +25,7 @@ add_service_files(
   SpawnModel.srv
 	SetModelPose.srv
 	DeleteModel.srv
-	SpawnSemanticMap.srv
+	SpawnMultipleModels.srv
 )
 
 generate_messages(
@@ -45,9 +47,9 @@ add_executable(spawner_client src/example_test_clients/spawner_client.cpp)
 target_link_libraries(spawner_client ${catkin_LIBRARIES})
 add_dependencies( spawner_client ${PROJECT_NAME}_generate_messages_cpp )
 
-add_executable(spawn_semantic_map_client src/example_test_clients/spawn_semantic_map_client.cpp)
-target_link_libraries(spawn_semantic_map_client ${catkin_LIBRARIES})
-add_dependencies( spawn_semantic_map_client ${PROJECT_NAME}_generate_messages_cpp )
+add_executable(spawn_multiple_models_client src/example_test_clients/spawn_multiple_models_client.cpp)
+target_link_libraries(spawn_multiple_models_client ${catkin_LIBRARIES})
+add_dependencies( spawn_multiple_models_client ${PROJECT_NAME}_generate_messages_cpp )
 
 
 add_executable(relocation_client src/example_test_clients/relocation_client.cpp)

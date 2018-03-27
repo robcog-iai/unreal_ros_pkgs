@@ -1,4 +1,0 @@
-string path_to_mesh
-string path_to_material
-geometry_msgs/Pose pose
-unreal_msgs/Tag[] tags

@@ -14,10 +14,8 @@ int main(int argc, char **argv)
 	ros::ServiceClient client = n.serviceClient<unreal_msgs::SpawnModel>("unreal/spawn_model");
 
 	unreal_msgs::SpawnModel srv;
-	srv.request.model_description.instance_id.class_name = "Sphere";
-	srv.request.model_description.instance_id.id = "1234";
-	srv.request.model_description.mesh_description.path_to_mesh = "StaticMesh'/Engine/BasicShapes/Sphere.Sphere'";
-	srv.request.model_description.mesh_description.path_to_material = "Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'";
+	srv.request.static_mesh_description.path_to_mesh = "StaticMesh'/Engine/BasicShapes/Sphere.Sphere'";
+	srv.request.static_mesh_description.path_to_material = "Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'";
 
 	geometry_msgs::Pose pose;
 	pose.position.x = 150;
@@ -32,6 +30,12 @@ int main(int argc, char **argv)
 
 	std::vector<unreal_msgs::Tag> tags;
 
+	unreal_msgs::Tag id;
+	id.tag_type = "SemLog";
+	id.key = "id";
+	id.value = "1234";
+	tags.push_back(id);
+
 	unreal_msgs::Tag tag;
 	tag.tag_type = "SemLog";
 	tag.key = "something";
@@ -44,8 +48,8 @@ int main(int argc, char **argv)
 	tag2.value = "something";
 	tags.push_back(tag2);
 
-	srv.request.model_description.pose = pose;
-	srv.request.model_description.tags = tags;
+	srv.request.static_mesh_description.pose = pose;
+	srv.request.static_mesh_description.tags = tags;
 
 	if(client.call(srv))
 	{

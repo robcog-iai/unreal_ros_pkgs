@@ -13,7 +13,8 @@ int main(int argc, char **argv)
 	ros::ServiceClient client = n.serviceClient<unreal_msgs::SetModelPose>("unreal/set_model_pose");
 
 	unreal_msgs::SetModelPose srv;
-	srv.request.id = "1234";
+	srv.request.instance_id.class_name = "Sphere";
+	srv.request.instance_id.id = "1234";
 
 	geometry_msgs::Pose pose;
 	pose.position.x = 300;

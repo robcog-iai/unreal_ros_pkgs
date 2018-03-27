@@ -12,7 +12,8 @@ int main(int argc, char **argv)
 	ros::ServiceClient client = n.serviceClient<unreal_msgs::DeleteModel>("unreal/delete_model");
 
 	unreal_msgs::DeleteModel srv;
-	srv.request.id = "1234";
+	srv.request.instance_id.class_name = "Sphere";
+	srv.request.instance_id.id = "1234";
 
 	if(client.call(srv))
 	{

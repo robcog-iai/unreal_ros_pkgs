@@ -1,4 +1,7 @@
-string id
+# This service is used to set the model described in the
+# instance_id to the set pose.
+unreal_msgs/InstanceId instance_id
 geometry_msgs/Pose pose
 ---
+# true if model was set to pose successfully.
 bool success

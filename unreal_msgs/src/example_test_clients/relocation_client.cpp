@@ -17,9 +17,9 @@ int main(int argc, char **argv)
 	srv.request.instance_id.id = "1234";
 
 	geometry_msgs::Pose pose;
-	pose.position.x = 300;
+	pose.position.x = 3;
 	pose.position.y = 0;
-	pose.position.z = 300;
+	pose.position.z = 3;
 
 	pose.orientation.x = 0;
 	pose.orientation.y = 0;

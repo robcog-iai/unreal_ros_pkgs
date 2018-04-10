@@ -20,3 +20,6 @@ geometry_msgs/Pose pose
 
 # UTags that the should be set to Model
 unreal_msgs/Tag[] tags
+
+# true if the model is static (physics are not enabled)
+bool is_static # default is true

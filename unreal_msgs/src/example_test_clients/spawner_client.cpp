@@ -20,9 +20,9 @@ int main(int argc, char **argv)
 	srv.request.model_description.mesh_description.path_to_material = "Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'";
 
 	geometry_msgs::Pose pose;
-	pose.position.x = 150;
+	pose.position.x = 1.5;
 	pose.position.y = 0;
-	pose.position.z = 150;
+	pose.position.z = 1.5;
 
 	pose.orientation.x = 0;
 	pose.orientation.y = 0;

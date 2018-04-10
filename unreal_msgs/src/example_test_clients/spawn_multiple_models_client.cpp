@@ -16,16 +16,16 @@ int main(int argc, char **argv)
 
     // creating mesh descripton
     unreal_msgs::MeshDescription mesh_description;
-	mesh_description.path_to_mesh = "StaticMesh'/Engine/BasicShapes/Sphere.Sphere'";
-    mesh_description.path_to_material = "Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'";
+	//mesh_description.path_to_mesh = "StaticMesh'/Engine/BasicShapes/Sphere.Sphere'";
+    //mesh_description.path_to_material = "Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'";
 
 	//creating model_description, for first modoel
 	unreal_msgs::ModelDescription model_description;
 
 	geometry_msgs::Pose pose;
-	pose.position.x = 150;
+	pose.position.x = 1.5;
 	pose.position.y = 0;
-	pose.position.z = 150;
+	pose.position.z = 1.5;
 
 	pose.orientation.x = 0;
 	pose.orientation.y = 0;
@@ -35,15 +35,16 @@ int main(int argc, char **argv)
 	model_description.pose = pose;
 	model_description.instance_id.class_name = "Sphere";
 	model_description.mesh_description = mesh_description;
+	model_description.is_static = true;
 
 
     // creating model_description, for second model
 	unreal_msgs::ModelDescription model_description2;
 
 	geometry_msgs::Pose pose2;
-	pose2.position.x = 300;
-	pose2.position.y = 100;
-	pose2.position.z = 400;
+	pose2.position.x = 3;
+	pose2.position.y = 1;
+	pose2.position.z = 4;
 
 	pose2.orientation.x = 0;
 	pose2.orientation.y = 0;
@@ -53,6 +54,7 @@ int main(int argc, char **argv)
 	model_description2.pose = pose2;
 	model_description2.instance_id.class_name = "Sphere";
 	model_description2.mesh_description = mesh_description;
+	model_description2.is_static = false;
 
     // puting objects into array and service message
 
@@ -80,7 +82,7 @@ int main(int argc, char **argv)
 			ROS_ERROR("Spawning the second Mesh did not Work!");
 		}
 	} else {
-		ROS_ERROR("Failed to call service spawner_service");
+		ROS_ERROR("Failed to call service spawn_multiple_models");
 		return 1;
 	}
 

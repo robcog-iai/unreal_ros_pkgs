@@ -2,7 +2,7 @@
 # to describe a model for the unreal world.
 
 # The instance_id is used to identify the described model
-unreal_msgs/InstanceId instance_id
+unreal_world_control_msgs/InstanceId instance_id
 
 # The mesh_description is optional.
 # If the mesh_description is not set the class_name and
@@ -13,13 +13,13 @@ unreal_msgs/InstanceId instance_id
 # The expected paths are
 #   StaticMesh: Models/namespace/class_name/SM_Class.uasset
 #   Material: Models/namespace/class_name/M_Class.uasset
-unreal_msgs/MeshDescription mesh_description
+unreal_world_control_msgs/MeshDescription mesh_description
 
 # Pose the model is supposed to have
 geometry_msgs/Pose pose
 
 # UTags that the should be set to Model
-unreal_msgs/Tag[] tags
+unreal_world_control_msgs/Tag[] tags
 
 # true if the model is static (physics are not enabled)
 bool is_static # default is true

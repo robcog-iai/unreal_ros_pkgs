@@ -1,0 +1,10 @@
+# This service is used to change the visual of am already spawned Model
+
+# The instance_id is used to identify the described model
+unreal_world_control_msgs/InstanceId instance_id
+
+# Mesh description the models is supposed to be set to.
+unreal_world_control_msgs/MeshDescription mesh_description
+---
+# true if model was changed succesfully.
+bool success

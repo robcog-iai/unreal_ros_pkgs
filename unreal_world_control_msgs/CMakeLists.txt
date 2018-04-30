@@ -16,6 +16,9 @@ add_message_files(
 	 MeshDescription.msg
 	 InstanceId.msg
 	 ModelDescription.msg
+	 AngularLimits.msg
+	 LinearLimits.msg
+	 PhysicsConstraintDetails.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -26,6 +29,8 @@ add_service_files(
 	DeleteModel.srv
 	SpawnMultipleModels.srv
 	ChangeVisualOfModel.srv
+	AttachModelToParent.srv
+	SpawnPhysicsConstraint.srv
 )
 
 generate_messages(

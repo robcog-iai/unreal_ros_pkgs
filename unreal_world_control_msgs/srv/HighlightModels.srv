@@ -1,0 +1,9 @@
+#All models that should be highlighted
+unreal_world_control_msgs/InstanceId[] instance_ids
+# True to select, flase to deselect
+bool to_be_highlighted
+# 1-5 for diffrent colors (Black, Red, Blud, Green, Yellow)
+int32 color_index
+---
+#true if all models were found and highlighted
+bool success

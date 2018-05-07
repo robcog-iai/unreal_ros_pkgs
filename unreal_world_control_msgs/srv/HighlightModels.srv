@@ -1,9 +1,10 @@
+
 # Models that should be highlighted
 unreal_world_control_msgs/InstanceId[] instance_ids
 # True - if given models are supposed to be highlighted.
 # Flase - if the highlighting should be removed.
 bool to_be_highlighted
-# 1-5 for different colors.
+# 1-5 for different colors (Black, Red, Blud, Green, Yellow).
 int color_index
 ---
 # True if ALL models were successfully highlighted

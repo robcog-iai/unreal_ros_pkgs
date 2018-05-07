@@ -3,7 +3,7 @@
 # the motions are represented by the folowing Enum.
 # 0: ACM_Free
 # 1: ACM_Limited
-# 2: ACM_Loced
+# 2: ACM_Locked
 uint8 swing_1_motion
 uint8 swing_2_motion
 uint8 twist_motion

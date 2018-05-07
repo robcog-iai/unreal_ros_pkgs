@@ -31,6 +31,7 @@ add_service_files(
 	ChangeVisualOfModel.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
+	HighlightModels.srv
 )
 
 generate_messages(

@@ -1,0 +1,5 @@
+# Models that should be highlighted
+unreal_world_control_msgs/InstanceId[] instance_ids
+---
+# True if ALL models were successfully highlighted
+bool success

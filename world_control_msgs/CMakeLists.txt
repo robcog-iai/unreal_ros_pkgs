@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(unreal_world_control_msgs)
+project(world_control_msgs)
 
 find_package(
 	catkin REQUIRED COMPONENTS
@@ -13,12 +13,10 @@ find_package(
 add_message_files(
    FILES
    Tag.msg
-	 MeshDescription.msg
-	 InstanceId.msg
-	 ModelDescription.msg
 	 AngularLimits.msg
 	 LinearLimits.msg
 	 PhysicsConstraintDetails.msg
+	 PhysicsProperites.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -27,11 +25,11 @@ add_service_files(
   SpawnModel.srv
 	SetModelPose.srv
 	DeleteModel.srv
-	SpawnMultipleModels.srv
-	ChangeVisualOfModel.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
 	HighlightModels.srv
+	ChangeMaterial.srv
+	ChangePhysicsProperties.srv
 )
 
 generate_messages(

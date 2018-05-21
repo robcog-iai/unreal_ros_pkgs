@@ -1,0 +1,9 @@
+# Model that should be highlighted
+string id
+
+# NONE, BLACK, RED, BLUE, GREEN, YELLOW
+# NONE is used to remove prior highlighting
+string color
+---
+# True model was successfully highlighted
+bool success

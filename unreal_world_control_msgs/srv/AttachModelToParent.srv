@@ -1,4 +1,0 @@
-unreal_world_control_msgs/InstanceId parent_model
-unreal_world_control_msgs/InstanceId child_model
----
-bool success

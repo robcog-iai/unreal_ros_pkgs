@@ -23,7 +23,7 @@ string path
 string actor_label
 
 # Physics proterties of the Model
-world_control_msgs/PhysicsProperites physics_properties
+world_control_msgs/PhysicsProperties physics_properties
 
 # By default the default materials of the mesh are used
 string[] material_names

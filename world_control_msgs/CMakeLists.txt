@@ -16,7 +16,7 @@ add_message_files(
 	 AngularLimits.msg
 	 LinearLimits.msg
 	 PhysicsConstraintDetails.msg
-	 PhysicsProperites.msg
+	 PhysicsProperties.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -27,7 +27,7 @@ add_service_files(
 	DeleteModel.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
-	HighlightModels.srv
+	HighlightModel.srv
 	ChangeMaterial.srv
 	ChangePhysicsProperties.srv
 )

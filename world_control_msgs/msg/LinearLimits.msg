@@ -12,6 +12,6 @@ float32 limit
 # if this is set to false the Advanced options will be set to their unreal default values.
 bool use_advanced
 # Advanced
-bool soft_constrained # default false
+bool soft_constraint # default false
 float32 stiffness # default 0
 float32 damping # default 0

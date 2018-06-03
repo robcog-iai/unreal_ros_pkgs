@@ -1,6 +1,0 @@
-string id
-string[] material_names
-#OPTIONAL
-string[] material_paths
----
-bool success

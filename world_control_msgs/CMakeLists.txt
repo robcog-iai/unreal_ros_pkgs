@@ -28,8 +28,8 @@ add_service_files(
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
 	HighlightModel.srv
-	ChangeMaterial.srv
-	ChangePhysicsProperties.srv
+	SetMaterial.srv
+	SetPhysicsProperties.srv
 )
 
 generate_messages(

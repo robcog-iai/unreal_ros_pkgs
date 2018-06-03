@@ -10,6 +10,7 @@ uint8 twist_motion
 float32 swing_1_limit_angle
 float32 swing_2_limit_angle
 float32 twist_limit_angle
+geometry_msgs/Vector3 angular_roation_offset
 
 # if this is set to false the Advanced options will be set to their unreal default values.
 bool use_advanced

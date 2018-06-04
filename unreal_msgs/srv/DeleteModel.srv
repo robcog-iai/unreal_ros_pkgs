@@ -1,6 +1,0 @@
-# This service is used to delete the model described in
-# the instance_id from the unreal world.
-unreal_msgs/InstanceId instance_id
----
-# true is model was deleted successfully.
-bool success

@@ -15,9 +15,9 @@ geometry_msgs/Vector3 angular_roation_offset
 # if this is set to false the Advanced options will be set to their unreal default values.
 bool use_advanced
 # Advanced
-bool swing_soft_constrained # default true
+bool swing_soft_constraint # default true
 float32 swing_stiffness # default 50
 float32 swing_damping # default 0
-bool twist_soft_constrained # default true
+bool twist_soft_constraint # default true
 float32 twist_stiffness # default 50
 float32 twist_damping # default 0

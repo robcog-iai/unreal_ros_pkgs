@@ -9,7 +9,7 @@ uint8 ARROW=5
 # This service will spawn new unreal marker (Actor).
 
 # Marker type
-#uint8 marker_type
+uint8 marker_type
 
 # Pose of the marker
 geometry_msgs/Pose pose

@@ -1,3 +1,0 @@
-string id
-world_control_msgs/PhysicsConstraintDetails constraint_details
-geometry_msgs/Pose pose

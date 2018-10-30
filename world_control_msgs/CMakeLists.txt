@@ -17,6 +17,9 @@ add_message_files(
 	 LinearLimits.msg
 	 PhysicsConstraintDetails.msg
 	 PhysicsProperties.msg
+	 ModelDescription.msg
+	 ConstraintDescription.msg
+	 RelationDescription.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -30,6 +33,7 @@ add_service_files(
 	HighlightModel.srv
 	SetMaterial.srv
 	SetPhysicsProperties.srv
+	SpawnSemanticMap.srv
 )
 
 generate_messages(

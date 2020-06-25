@@ -36,6 +36,7 @@ add_service_files(
 	SpawnSemanticMap.srv
     ResetLevel.srv
     MoveObject.srv
+    Checkpoint.srv
 )
 
 generate_messages(

@@ -1,0 +1,7 @@
+# This service is used to set the model described by the id to the set pose.
+string id
+---
+# Pose in UE4 world coordinates with ROS conventions
+geometry_msgs/Pose pose
+# true if model could be found
+bool success

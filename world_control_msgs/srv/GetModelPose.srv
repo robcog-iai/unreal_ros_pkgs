@@ -1,4 +1,4 @@
-# This service is used to set the model described by the id to the set pose.
+# This service is used to get the pose of the model described by the given id
 string id
 ---
 # Pose in UE4 world coordinates with ROS conventions

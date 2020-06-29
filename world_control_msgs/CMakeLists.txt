@@ -27,6 +27,7 @@ add_service_files(
   FILES
   SpawnModel.srv
 	SetModelPose.srv
+	GetModelPose.srv
 	DeleteModel.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv

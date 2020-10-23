@@ -35,6 +35,7 @@ add_service_files(
 	SetMaterial.srv
 	SetPhysicsProperties.srv
 	SpawnSemanticMap.srv
+	#	SpawnRobot.srv
 )
 
 generate_messages(

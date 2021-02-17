@@ -33,6 +33,7 @@ add_service_files(
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
 	HighlightModel.srv
+    ObjectToObjectState.srv
 	SetMaterial.srv
 	SetPhysicsProperties.srv
 	SpawnSemanticMap.srv

@@ -30,10 +30,11 @@ add_service_files(
 	DeleteModel.srv
 	DeleteAll.srv
 	GetModelPose.srv
+	GetModelSocketPose.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
 	HighlightModel.srv
-    ObjectToObjectState.srv
+        ObjectToObjectState.srv
 	SetMaterial.srv
 	SetPhysicsProperties.srv
 	SpawnSemanticMap.srv

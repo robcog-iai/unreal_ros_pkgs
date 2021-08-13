@@ -27,16 +27,22 @@ add_service_files(
   FILES
   SpawnModel.srv
 	SetModelPose.srv
-	GetModelPose.srv
 	DeleteModel.srv
+	DeleteAll.srv
+	GetModelPose.srv
+	GetModelSocketPose.srv
 	AttachModelToParent.srv
 	SpawnPhysicsConstraint.srv
 	HighlightModel.srv
+        ObjectToObjectState.srv
 	SetMaterial.srv
 	SetPhysicsProperties.srv
 	SpawnSemanticMap.srv
 	SpawnProMesh.srv
 	#	SpawnRobot.srv
+    	ResetLevel.srv
+    	MoveObject.srv
+    	Checkpoint.srv
 )
 
 generate_messages(

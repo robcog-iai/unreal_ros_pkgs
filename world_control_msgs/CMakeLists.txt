@@ -38,9 +38,11 @@ add_service_files(
 	SetMaterial.srv
 	SetPhysicsProperties.srv
 	SpawnSemanticMap.srv
-    ResetLevel.srv
-    MoveObject.srv
-    Checkpoint.srv
+	SpawnProMesh.srv
+	#	SpawnRobot.srv
+    	ResetLevel.srv
+    	MoveObject.srv
+    	Checkpoint.srv
 )
 
 generate_messages(

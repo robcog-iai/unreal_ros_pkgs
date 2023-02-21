@@ -22,6 +22,11 @@ string path
 # name of the model in the editor
 string actor_label
 
+# This attribute is mainly necessary if you are working with non-editor builds
+# It will explicitly set AActor::Name during spawn to the supplied value if non-empty. 
+# Please note though, that the name of each AActor in the world **MUST** be unique. Otherwise UE4 will fail.
+string override_name
+
 # Physics proterties of the Model
 world_control_msgs/PhysicsProperties physics_properties
 
@@ -45,3 +50,4 @@ string name
 string etype
 # true if model was spawned successfully.
 bool success
+
